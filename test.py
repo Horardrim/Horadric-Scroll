@@ -1,4 +1,7 @@
 import unittest
 
+from tests import *
+
 if __name__ =='__main__':
-    unittest.main(Module=none)
+    testsuite = unittest.TestLoader().discover('./tests')
+    unittest.TextTestRunner(verbosity=1).run(testsuite)

@@ -2,6 +2,6 @@ import unittest
 
 from algo import demo
 
-class test_Demo(unittest.TestCase):
-    def normal_test(self):
+class TestDemo(unittest.TestCase):
+    def test_normal_case(self):
         self.assertEqual(demo.add(2, 2), 4)
