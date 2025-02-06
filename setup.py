@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='Horadric Scroll',
-    version='1.0.1',
+    version='1.1.0',
     description='Practice of leet code with python.',
     long_description=readme,
     author='TalRasha',
