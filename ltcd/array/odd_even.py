@@ -1,6 +1,7 @@
 def odd_num(num):
     for i in range(1, num):
         if i % 2 == 0:
+            print("before yield")
             yield i
 
 def even_num(num):
@@ -28,6 +29,7 @@ gen.send(15)
 gen.close()
 
 if __name__ == "__main__":
+    print("to call odd_num")
     for i in odd_num(11):
         print(i)
 
